@@ -231,6 +231,11 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition-duration: 0.2s;
+
+  &:hover {
+    color: #8d2d2d;
+  }
 }
 
 .container {
@@ -366,6 +371,63 @@ a {
 }
 
 .panel__item-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+}
+
+.main__extra {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  grid-auto-rows: 290px 350px;
+  grid-template-areas:
+    'politics politics technologies technologies business business'
+    'week-major-feature week-major-feature week-major-feature week-major-feature interview interview';
+  padding-bottom: 24px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd5ca;
+  border-radius: 16px;
+  overflow: hidden;
+
+  &.politics {
+    grid-area: politics;
+  }
+
+  &.technologies {
+    grid-area: technologies;
+  }
+
+  &.business {
+    grid-area: business;
+  }
+
+  &.week-major-feature {
+    grid-area: week-major-feature;
+  }
+
+  &.interview {
+    grid-area: interview;
+  }
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 20px;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #222;
+}
+
+.card__description {
   font-weight: 400;
   font-size: 16px;
   color: #222;
