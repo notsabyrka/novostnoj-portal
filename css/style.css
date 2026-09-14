@@ -302,6 +302,7 @@ a {
   background:
     url('../img/latest-news.jpg') center / cover no-repeat,
     linear-gradient(180deg, rgb(217 217 217 / 0) 0%, rgb(0 0 0 / 0.9) 100%);
+  transition-duration: 0.2s;
 
   &:hover {
     scale: 1.01;
