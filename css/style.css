@@ -225,5 +225,55 @@ svg * {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #20242b;
+  background-color: #f5f3ee;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-block: 24px;
+  border-bottom: 2px solid #ddd5ca;
+}
+
+.header__top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.header__time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: #6f6f6f;
+}
+
+.header__title {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.header__menu-list {
+  display: flex;
+  column-gap: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #222;
 }
