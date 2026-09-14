@@ -229,6 +229,7 @@ body {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: inherit;
   transition-duration: 0.2s;
@@ -301,6 +302,14 @@ a {
   background:
     url('../img/latest-news.jpg') center / cover no-repeat,
     linear-gradient(180deg, rgb(217 217 217 / 0) 0%, rgb(0 0 0 / 0.9) 100%);
+
+  &:hover {
+    scale: 1.01;
+  }
+
+  &:active {
+    scale: 0.99;
+  }
 }
 
 .latest-news__body {
@@ -353,11 +362,17 @@ a {
   color: #222;
 }
 
-.panel__item {
+.panel__link {
   display: flex;
   flex-direction: column;
   row-gap: 4px;
   padding-block: 12px;
+  border-radius: 6px;
+
+  &:hover {
+    padding-left: 10px;
+    background-color: #ddd5ca;
+  }
 
   &:not(:last-child) {
     border-bottom: 1px solid #ece7df;
@@ -392,6 +407,15 @@ a {
   border: 1px solid #ddd5ca;
   border-radius: 16px;
   overflow: hidden;
+  transition-duration: 0.2s;
+
+  &:hover {
+    scale: 1.01;
+  }
+
+  &:active {
+    scale: 0.99;
+  }
 
   &.politics {
     grid-area: politics;
